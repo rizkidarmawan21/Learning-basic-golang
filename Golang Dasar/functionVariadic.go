@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// function yang menerima jumlah argumen yang tak terbatas
+// Function sumAll didefinisikan sebagai variadik function karena menggunakan parameter numbers ...int. 
+// Ini artinya function ini bisa menerima sejumlah argumen bertipe integer yang tidak ditentukan jumlahnya.
 func sumAll(numbers ...int) int {
 	total := 0
 	for _, value := range numbers {
