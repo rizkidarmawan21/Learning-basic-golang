@@ -19,6 +19,9 @@ func factorialRecursive(value int) int  {
 	if value == 1 {
 		return 1
 	}else {
+		fmt.Println("asas",value)
+		fmt.Println("asas -> ",value -1)
+		fmt.Println("asas ->-> ",value * factorialRecursive(value-1))
 		return value * factorialRecursive(value-1)
 	}
 }

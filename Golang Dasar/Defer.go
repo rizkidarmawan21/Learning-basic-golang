@@ -7,7 +7,8 @@ func logging() {
 }
 
 func runApplication(value int) {
-	defer logging()
+	defer logging() // ini akan di eksekusi ketika fungsi selesai di eksekusi/ diakhir
+				    // defer ini akan selalu dieksekusi walaupun function error
 	fmt.Println("run application")
 
 	result := 10 / value
@@ -15,5 +16,6 @@ func runApplication(value int) {
 }
 
 func main() {
-	runApplication(0)
+	runApplication(1)
+	// runApplication(0)
 }

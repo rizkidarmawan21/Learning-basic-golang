@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type HasName interface {
-	GetName() string
+	GetName() string // di dalam ini tentukan method2 apa aja yg dimiliki HasBane
 	GetAlamat() string
 }
 
@@ -23,13 +23,18 @@ func (person Person) GetAlamat() string {
 	return person.Alamat
 }
 
-// type Animal struct {
-// 	Name string
-// }
+type Animal struct {
+	Name string
+	Alamat string
+}
 
-// func (animal Animal) GetName() string {
-// 	return animal.Name
-// }
+func (animal Animal) GetName() string {
+	return animal.Name
+}
+
+func (animal Animal) GetAlamat() string {
+	return animal.Alamat
+}
 
 func main() {
 	// Tipe data abstract mirip constract
@@ -43,4 +48,11 @@ func main() {
 	// }
 
 	// sayHello(cat)
+
+	cat := Animal{
+		Name: "Cat",
+		Alamat: "Bandung",
+	}
+
+	sayHello(cat)
 }

@@ -17,7 +17,7 @@ func registerUser(name string, blacklist Blacklist) {
 // FUNCTION TANPA NAMA
 func main() {
 
-	// ini adalah anon function
+	// ini adalah anon function, untuk filter blacklist
 	blacklist := func (name string) bool  {
 		return name == "admin"
 	}
@@ -25,6 +25,7 @@ func main() {
 	registerUser("rizki",blacklist)
 	registerUser("admin",blacklist)
 
+	// ini juga anon func, tp langsung didalam params tidak ditampung di statment dahulu
 	registerUser("root", func (name string)bool  {
 		return name == "root"
 	})
