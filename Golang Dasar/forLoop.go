@@ -10,13 +10,14 @@ func main()  {
 	// 	counter++
 	// }
 	
+	// diatas ini bisa di sederhanakan seperti dibawah ini
 	for counter := 1; counter <= 10; counter++ {
 			fmt.Println("ke-",counter)
 	}
 
 	// loop array.slice,map
 
-	slice := []string{"Rizki","Darmawan","Arina","Mana"}
+	slice := []string{"Rizki","Darmawan","Arina","Mana"} // data collection
 
 	for i := 0; i < len(slice); i++ {
 		fmt.Println(slice[i])
@@ -30,7 +31,7 @@ func main()  {
 
 	// kalo index gk mau di pake kasih ada _ (underscore) 
 	for _, name := range slice {
-		fmt.Println("index =",name)
+		fmt.Println("index2 =",name)
 	}
 
 	person := make(map[string]string)

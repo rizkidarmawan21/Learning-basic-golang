@@ -13,9 +13,10 @@ func main()  {
 
 
 	var name = "Rizki Darms"
-	var e byte = name[0]
-	var eString string = string(e)
+	var e uint8 = name[0] // ambil ke karakter pertama atau index 0 convert ke uint8
+	var eString string = string(e) // convert ke string
 
 	fmt.Println(name)
+	fmt.Println(e)
 	fmt.Println(eString)
 }

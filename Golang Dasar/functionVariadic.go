@@ -17,9 +17,11 @@ func sumAll(numbers ...int) int {
 func main()  {
 	total := sumAll()
 	fmt.Println(total)
+	total2 := sumAll(10,20,2)
+	fmt.Println(total2)
 	
 	slice := []int{10,20,12}
 	
-	total = sumAll(slice...)
+	total = sumAll(slice...) // ditambah ... auto diconvert jadi argument
 	fmt.Println(total)
 }

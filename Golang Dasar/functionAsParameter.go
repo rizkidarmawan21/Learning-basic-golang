@@ -13,7 +13,7 @@ func sayHelloWithFilter(name string,filter Filter) {
 
 func spamFilter(name string)string{
 	if name == "Anjing" {
-		return "..."
+		return "..saru.."
 	}else {
 		return name
 	}

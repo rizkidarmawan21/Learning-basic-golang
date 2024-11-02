@@ -4,17 +4,16 @@ import (
 	"fmt"
 )
 
-func main(){
+func main() {
 	name := "Jokoddsd"
-
 
 	switch name {
 	case "Rizki":
 		fmt.Println("Rizki")
-	
+
 	case "Joko":
 		fmt.Println("Joko")
-		
+
 	default:
 		fmt.Println("Kenalan dong")
 	}
@@ -37,5 +36,19 @@ func main(){
 		fmt.Println("Nama panjang banget")
 	default:
 		fmt.Println("Nama sudah benar")
+	}
+
+	// switch juga bisa memnggunakan multi condition
+	day := 5
+
+	switch day {
+	case 1, 3, 5:
+		fmt.Println("Odd weekday")
+	case 2, 4:
+		fmt.Println("Even weekday")
+	case 6, 7:
+		fmt.Println("Weekend")
+	default:
+		fmt.Println("Invalid day of day number")
 	}
 }
