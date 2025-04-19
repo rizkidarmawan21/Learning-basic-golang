@@ -1,3 +1,0 @@
-go run ...
-
-go build .. (for build to production)
